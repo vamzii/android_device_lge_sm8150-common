@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
 	FM2 \
 	qcom.fmradio \
 	qcom.fmradio.xml
+	
+# FOD    
+PRODUCT_PACKAGES += \
+     lineage.biometrics.fingerprint.inscreen@1.0-service.mh2lm
 
 # GPS
 PRODUCT_COPY_FILES += \

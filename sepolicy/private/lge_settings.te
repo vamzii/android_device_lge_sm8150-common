@@ -1,0 +1,9 @@
+type lge_settings, domain;
+
+app_domain(lge_settings)
+
+# Allow lge_settings to find hal_displayfeature_lge_hwservice
+allow lge_settings hal_displayfeature_lge_hwservice:hwservice_manager find;
+
+# Allow binder communication with hal_displayfeature_lge_default
+binder_call(lge_settings, hal_displayfeature_lge_default)

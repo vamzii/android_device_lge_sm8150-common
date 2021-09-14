@@ -122,7 +122,9 @@ USE_DEVICE_SPECIFIC_GPS := true
 # HIDL
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/lge_vendor_framework_compatibility_matrix.xml
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_lge_msmnile
 TARGET_RECOVERY_DEVICE_MODULES := libinit_lge_msmnile
@@ -195,7 +197,7 @@ TARGET_RIL_VARIANT := caf
 VENDOR_SECURITY_PATCH := 2020-01-01
 
 # SELinux
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+#include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor

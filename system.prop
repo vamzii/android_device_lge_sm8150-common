@@ -44,7 +44,6 @@ ro.hwui.text_large_cache_height=1024
 
 # Media
 av.offload.enable=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 #Netflix custom property
 ro.netflix.bsp_rev=Q855-16947-1

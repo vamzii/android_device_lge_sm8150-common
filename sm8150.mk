@@ -26,9 +26,6 @@ PRODUCT_PLATFORM := msmnile
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # GSI Keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
